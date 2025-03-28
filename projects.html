@@ -137,6 +137,9 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-brand">Aayushmaan Garg</div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
@@ -223,7 +226,8 @@
         </div>
     </div>
 
-    <script>
+    <script src="assets/js/main.js">
+        
         function toggleProject(header) {
             const content = header.nextElementSibling;
             const arrow = header.querySelector('i');

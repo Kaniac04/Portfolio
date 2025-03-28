@@ -80,6 +80,10 @@ body::after {
     align-items: center;
 }
 
+.mobile-menu-btn {
+    display: none;  /* Hidden by default */
+}
+
 .nav-brand {
     background: linear-gradient(
         120deg,
@@ -414,4 +418,112 @@ footer {
     font-size: 2rem;
     text-align: center;
     margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .navbar {
+        padding: 1rem;
+        background-color: rgba(18, 18, 18, 0.95);
+        backdrop-filter: blur(10px);
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--cloud-white);
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: rgba(18, 18, 18, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .quote-container {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+    }
+
+    /* Profile Section */
+    .profile-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    /* Skills Section */
+    .flashcards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* Project Cards */
+    .project-card {
+        margin: 1rem;
+    }
+
+    .tech-stack {
+        flex-wrap: wrap;
+    }
+
+    /* Contact Page */
+    .contact-card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    /* Resume Page */
+    .pdf-container {
+        margin: 1rem;
+    }
+
+    .pdf-viewer {
+        height: 70vh;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    blockquote {
+        font-size: 1.2rem;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 250px;
+    }
 }
