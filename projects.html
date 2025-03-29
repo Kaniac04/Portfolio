@@ -131,6 +131,26 @@
             color: var(--soft-blue);
         }
 
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            margin: 1rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
     </style>
 </head>
 <body>
@@ -156,6 +176,16 @@
             </div>
             <div class="project-content">
                 <p>A sophisticated machine learning pipeline for image processing and analysis, featuring handwriting recognition, feature extraction, and psychological interpretation. Built with state-of-the-art computer vision algorithms. Generates Real-Time reports of Psychological analysis from Handwriting.</p>
+                
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/FLpdbzGGmm4?si=yEAhFm0fpBljWUPE"
+                        title="PsyFer Demo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
                 <div class="tech-stack">
                     <span class="tech-tag">Flask</span>
                     <span class="tech-tag">OpenCV</span>
@@ -174,6 +204,16 @@
             </div>
             <div class="project-content">
                 <p>An advanced AI-powered system that transforms static documentation into an interactive chat experience. It supports multi-URL processing, enabling seamless conversations with content from 100+ sources simultaneously. Using FastAPI, Qdrant, and state-of-the-art LLMs, it delivers responses with real-time context-aware answers. With built-in URL safety checks and intelligent document parsing, SmartHub ensures fast, secure, and scalable AI-driven interactions.</p>
+                
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/QqbWFmRuqnA?si=cnUFVuWg4g0yV4N_"
+                        title="SmartHub Demo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
                 <div class="warning-box">
                     <i class="fas fa-exclamation-triangle"></i>
                     <p>Note: The demo may take 30-60 seconds to load due to cold start on free tier hosting.</p>
@@ -196,6 +236,15 @@
             </div>
             <div class="project-content">
                 <p>A powerful command-line interface tool built in Go that streamlines project initialization by generating organized directory structures. It supports multiple frameworks including Flask and Gin, following industry best practices. The tool enables developers to quickly bootstrap projects with consistent and well-organized architectures.</p>
+                
+                <div class="video-container">
+                    <iframe
+                        src="https://www.youtube.com/embed/C-hmxumAWWY?si=Zf0B879UU5I1jb5z"
+                        title="Scaffold CLI Demo"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
                 
                 <div class="code-box">
                     <code>go install github.com/Kaniac04/scaffold@latest</code>
