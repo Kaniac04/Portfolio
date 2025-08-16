@@ -31,4 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.replace('fa-times', 'fa-bars');
         }
     });
+
+    // Ensure all links, including "Work Experience," are visible
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.style.display = 'block';
+    });
 });

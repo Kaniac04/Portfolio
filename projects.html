@@ -102,6 +102,52 @@
             opacity: 0.9;
         }
 
+        .critical-box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255, 0, 0, 0.1);
+            border-left: 3px solid #ff0000;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .critical-box i {
+            color: #ff0000;
+            font-size: 1.2rem;
+        }
+
+        .critical-box p {
+            color: var(--cloud-white);
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .info-box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(0, 123, 255, 0.1);
+            border-left: 3px solid #007bff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .info-box i {
+            color: #007bff;
+            font-size: 1.2rem;
+        }
+
+        .info-box p {
+            color: var(--cloud-white);
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
         .code-box {
             background: rgba(0, 0, 0, 0.3);
             border-radius: 8px;
@@ -163,6 +209,7 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="work-experience.html">Work Experience</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -214,9 +261,9 @@
                     </iframe>
                 </div>
                 
-                <div class="warning-box">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <p>Note: The demo may take 30-60 seconds to load due to cold start on free tier hosting.</p>
+                <div class="info-box">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Info: This project has been decommissioned and is now archived.</p>
                 </div>
                 <div class="tech-stack">
                     <span class="tech-tag">Python</span>
